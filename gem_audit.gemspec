@@ -34,12 +34,12 @@ Gem::Specification.new do |s|
   s.require_paths = %w[lib]
 
   ## If your gem includes any executables, list them here.
-  s.executables = ["gem_audit"]
+  # s.executables = ["gem_audit"]
 
   ## Specify any RDoc options here. You'll want to add your README and
   ## LICENSE files to the extra_rdoc_files list.
   s.rdoc_options = ["--charset=UTF-8"]
-  s.extra_rdoc_files = %w[README LICENSE]
+  s.extra_rdoc_files = %w[README.md LICENSE]
 
   ## List your runtime dependencies here. Runtime dependencies are those
   ## that are needed for an end user to actually USE your code.
@@ -50,10 +50,15 @@ Gem::Specification.new do |s|
   ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
   # = MANIFEST =
   s.files = %w[
+    Gemfile
+    Gemfile.lock
     LICENSE
-    NAME.gemspec
     README.md
     Rakefile
+    gem_audit.gemspec
+    lib/gem_audit.rb
+    lib/gem_audit/auditor.rb
+    lib/rubygems_plugin.rb
   ]
   # = MANIFEST =
 
